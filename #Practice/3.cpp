@@ -1,7 +1,14 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int a=5,b=7,c=3;
+    int a,b,c;
+    cout<<" Enter the value of A :";
+    cin>>a;
+    cout<<" Enter the value of B :";
+    cin>>b;
+    cout<<" Enter the value of C :";
+    cin>>c;
+
     if (a>b)
     {
         if (a>c)
