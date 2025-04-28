@@ -1,21 +1,30 @@
-#include<iostream>
+#include <iostream>
+#include <cmath>
 using namespace std;
-int main(){
-    int n;
-    cin>>n;
-    int j=1;
-    for (int i = 1; i <= 10; i++)
-    {
-        if (n/2==0)
-        {
-            cout<<n;
-            j++;
-        }
-        else{
-            cout<<n<<endl;
-        }
-        
+
+int main() {
+    int number;
+    cout << "Enter a number: ";
+    cin >> number;
+
+    if (number <= 1) {
+        cout << "Not Prime" << endl;
+        return 0;
     }
-    cout<<j;
+
+    bool isPrime = true;
+
+    for (int i = 2; i <= sqrt(number); i++) {
+        if (number % i == 0) {
+            isPrime = false;
+            break;
+        }
+    }
+
+    if (isPrime)
+        cout << "Prime" << endl;
+    else
+        cout << "Not Prime" << endl;
+
     return 0;
 }
