@@ -1,13 +1,14 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n;
-    cin>>n;
-    for (int i = n; i >= 1; i--)
+    for (int i = 1; i < 100; i++)
     {
+       if (i % 2  == !0)
+       {
         cout<<i<<endl;
+       }
+       
     }
     
     return 0;
 }
-//print n to 1 number in  reverses order
